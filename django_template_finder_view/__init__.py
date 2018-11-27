@@ -29,7 +29,10 @@ class TemplateFinder(TemplateView):
 
         index = join(template_path, 'index.html')
         template = join(template_path + '.html')
-        if self.__template_exists__(template):
+        if (
+                self.__template_exists__(template) or
+                self.__template_exists__(template_path)
+        ):
             return template
         elif self.__template_exists__(index):
             return index
