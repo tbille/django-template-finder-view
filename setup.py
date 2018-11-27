@@ -10,7 +10,7 @@ except ImportError:
 
 setup(
     name='django-template-finder-view',
-    version='0.3',
+    version='0.4',
     url='',
     license='LGPLv3',
     author='Canonical Webteam',
